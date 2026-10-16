@@ -16,7 +16,104 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-
+const arrayProdotti = [
+   {
+      nome: 'cuffie',
+      categoria: 'elettronica',
+      prezzo: 89.99,
+      rating: 4,
+      immagine: 'mouse.png',
+      disponibile: true
+   },
+   {
+      nome: 'tablet',
+      categoria: 'elettronica',
+      prezzo: 199.00,
+      rating: 5,
+      immagine: 'mouse.png',
+      disponibile: true
+   },
+   {
+      nome: 'libro',
+      categoria: 'elettronica',
+      prezzo: 14.90,
+      rating: 4,
+      immagine: 'mouse.png',
+      disponibile: true
+   },
+   {
+      nome: 'zaino',
+      categoria: 'elettronica',
+      prezzo: 49.99,
+      rating: 4,
+      immagine: 'mouse.png',
+      disponibile: true
+   },
+   {
+      nome: 'lampada',
+      categoria: 'elettronica',
+      prezzo: 29.50,
+      rating: 3,
+      immagine: 'mouse.png',
+      disponibile: true
+   },
+   {
+      nome: 'smartwatch',
+      categoria: 'elettronica',
+      prezzo: 119.00,
+      rating: 4,
+      immagine: 'mouse.png',
+      disponibile: true
+   },
+   {
+      nome: 'mouse',
+      categoria: 'elettronica',
+      prezzo: 24.90,
+      rating: 4,
+      immagine :'mouse.png',
+      disponibile: true
+   },
+   {
+      nome: 'caffettiera',
+      categoria: 'elettronica',
+      prezzo: 22.00,
+      rating: 5,
+      immagine: 'mouse.png',
+      disponibile: true
+   },
+   {
+      nome: 'diario',
+      categoria: 'elettronica',
+      prezzo: 19.99,
+      rating: 5,
+      immagine: 'mouse.png',
+      disponibile: false
+   },
+   {
+      nome: 'cintura',
+      categoria: 'elettronica',
+      prezzo: 49.99,
+      rating: 2,
+      immagine: 'mouse.png',
+      disponibile: false
+   },
+   {
+      nome: 'computer',
+      categoria: 'elettronica',
+      prezzo: 889.99,
+      rating: 5,
+      immagine: 'mouse.png',
+      disponibile: false
+   },
+   {
+      nome: 'monitor',
+      categoria: 'elettronica',
+      prezzo: 489.99,
+      rating: 4,
+      immagine: 'mouse.png',
+      disponibile: false
+   },
+]
 /* VERSIONE INTERMEDIA — formattaPrezzo(prezzo)
    Funzione che ritorna una stringa tipo "€ 19,99".
    Esempio in console.log: Monitor: € 150,00
@@ -24,6 +121,12 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function ritrnaPrezzo() {
+   for (let i = 0; i < arrayProdotti.length ; i++){
+      console.log(`${arrayProdotti[i].nome} prezzo: ${arrayProdotti[i].prezzo.toFixed(2)}`)
+   }
+}
+      console.log(ritrnaPrezzo(arrayProdotti))
 
 /* VERSIONE INTERMEDIA — stelline(rating)
    Funzione che ritorna una stringa di stelline piene/vuote.
@@ -32,6 +135,33 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function valutazione(){
+   for(let i = 0 ; i < arrayProdotti.length; i++){
+      
+            switch (arrayProdotti[i].rating) {
+      case 5:
+         console.log( `${arrayProdotti[i].nome} valutazione: 5 → ★★★★★`)
+          break;
+      case 4:
+          console.log( `${arrayProdotti[i].nome} valutazione: 4 → ★★★★☆`)
+          break;
+
+      case 3:
+          console.log( `${arrayProdotti[i].nome} valutazione: 3 → ★★★☆☆`)
+          break;
+      case 2:
+          console.log( `${arrayProdotti[i].nome} valutazione: 2 → ★★☆☆☆`)
+          break;
+      case 1:
+          console.log( `${arrayProdotti[i].nome} valutazione: 1 → ★☆☆☆☆`)
+          break;
+      default:
+         return "Il prodotto non ha un rating"; 
+         }
+      }
+}
+console.log(valutazione())
 
 /* VERSIONE INTERMEDIA — Filtro per categoria
    Funzione che riceve il parametro categoria e filtra l'array prodotti mostrando solo i prodotti della categoria ricevuta

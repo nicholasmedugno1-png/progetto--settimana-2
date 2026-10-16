@@ -134,13 +134,13 @@ function renderProdotti(lista) {
     let rigaIntestazione = document.createElement('tr');
 
     rigaIntestazione.innerHTML = `
-    <tr>
-        <th>NOME</th>
-        <th>PREZZO</th>
-        <th>CATEGORIA</th>
-        <th>VALUTAZIONE</th>
-      </tr>   
-    `;
+            <th>NOME</th>
+            <th>PREZZO</th>
+            <th>CATEGORIA</th>
+            <th>VALUTAZIONE</th>
+            `;
+    
+        
 
     stampa.innerHTML = rigaIntestazione.innerHTML;
 
@@ -148,14 +148,23 @@ function renderProdotti(lista) {
         let celleTable = document.createElement('tr');
       
         celleTable.innerHTML = `
+        
             <td>${lista[i].nome}</td>
             <td>${lista[i].prezzo} €</td>
             <td>${lista[i].categoria}</td>
             <td>${valutazione(lista[i].rating)}</td>
+          
         `;
 
         stampa.innerHTML += celleTable.innerHTML;
     }
+    
+    let rigaTotale = document.createElement('tr')
+
+    rigaTotale.innerHTML = `
+         <td>Totale Prodotti: ${lista.length}</td>
+    `;
+    stampa.innerHTML += rigaTotale.innerHTML
 }
 
 renderProdotti(arrayProdottiStampa);

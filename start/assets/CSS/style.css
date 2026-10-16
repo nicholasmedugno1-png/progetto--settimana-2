@@ -431,4 +431,6 @@ text-align: center;
 }
 
 
-
+.tableProdotti tr:nth-child(odd) {
+    background-color: hsla(60, 1%, 32%, 0.5);
+}

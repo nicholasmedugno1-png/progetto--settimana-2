@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Homepage — Week Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <!-- Logo, barra di ricerca, link Account / Ordini / Carrello -->
+
+    <div class="topBar">
+      <div class="logoAmazon">
+        <p><b>Amazon</b></p>
+      </div>
+      <div class="barSerch">
+        <input type="text" placeholder="Cerca prodotti, categoria, brand">
+        <button>Cerca</button>
+      </div>
+
+
+      <div class="user">
+        <a href="javaScript.void(0)">Accaunt</a>
+        <a href="javaScript.void(0)">Ordini</a>
+      </div>
+      <div class="Carrello">
+        <button class="btnShop"><a href="javaScript.void(0)">Carrello (0)</a></button>
+      </div>
+    </div>
+
+    </div>
+
+  </header>
+
+
+
+  <main>
+
+    <section class="hero">
+      <!-- Titolo grande, sottotitolo -->
+      <div class="title">
+        <h1>Le offerte di oggi</h1>
+        <p>Sconti fino al 70% su elettronica, libri, casa e molto altro</p>
+      </div>
+
+    </section>
+
+    <section class="categorie">
+      <h3>Categorie</h3>
+      <!-- 4 card categoria -->
+      <div class="sottoCategoria">
+        <div class="card , cardElettro">
+          <p>Elettronica</p>
+          <div class="descrizioneCard">
+            <h3 class="titleDescrizione">Elettronica</h3>
+            <a href="javaScript.void(0)">Scopri di piu</a>
+          </div>
+        </div>
+      </div>
+      <div class="sottoCategoria">
+        <div class="card , cardLibri">
+          <p>Libri</p>
+          <div class="descrizioneCard">
+            <h3 class="titleDescrizione">Libri</h3>
+            <a href="javaScript.void(0)">Scopri di piu</a>
+          </div>
+        </div>
+      </div>
+      <div class="sottoCategoria">
+        <div class="card , cardAbbigliamento">
+          <p>Abbigliamento</p>
+          <div class="descrizioneCard">
+            <h3 class="titleDescrizione">Abbigliamento</h3>
+            <a href="javaScript.void(0)">Scopri di piu</a>
+          </div>
+        </div>
+      </div>
+      <div class="sottoCategoria">
+        <div class="card , cardCasa">
+          <p>Casa</p>
+          <div class="descrizioneCard">
+            <h3 class="titleDescrizione">Casa</h3>
+            <a href="javaScript.void(0)">Scopri di piu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="prodotti">
+      <!-- Griglia prodotti (Versione Base: HTML statico; Intermedia/Avanzata: generata da JS) -->
+      <h3>I piu venduti</h3>
+      <div class="sottoProdotto">
+        <div class="cardProdotto">
+          <div class="cellaInterna">
+            <p>Cuffie</p>
+          </div>
+
+          <div class="descrizioneCardProdotto">
+            <h3 class="titleDescrizione">cuffie wireless con cancellazione del rumore</h3>
+            <p id="IconaStella">aggiungere icona</p>
+            <p>89.99</p>
+            <div class="btnAggiungiCarrello"> <button>Aggiungi al carrello</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sottoProdotto">
+        <div class="cardProdotto">
+          <div class="cellaInterna">
+            <p>Tablet</p>
+          </div>
+
+          <div class="descrizioneCardProdotto">
+            <h3 class="titleDescrizione">Tablet 10 pollici 64GB</h3>
+            <p id="IconaStella">aggiungere icona</p>
+            <p>89.99</p>
+            <div class="btnAggiungiCarrello"> <button>Aggiungi al carrello</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sottoProdotto">
+        <div class="cardProdotto">
+          <div class="cellaInterna">
+            <p>Libro</p>
+          </div>
+
+          <div class="descrizioneCardProdotto">
+            <h3 class="titleDescrizione">Il romanzo dell'anno</h3>
+            <p id="IconaStella">aggiungere icona</p>
+            <p>89.99</p>
+            <div class="btnAggiungiCarrello"> <button>Aggiungi al carrello</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sottoProdotto">
+        <div class="cardProdotto">
+          <div class="cellaInterna">
+            <p>Zaino</p>
+          </div>
+
+          <div class="descrizioneCardProdotto">
+            <h3 class="titleDescrizione">Zaino da viaggio 30L impermiabile</h3>
+            <p id="IconaStella">aggiungere icona</p>
+            <p>89.99</p>
+            <div class="btnAggiungiCarrello"> <button>Aggiungi al carrello</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sottoProdotto">
+        <div class="cardProdotto">
+          <div class="cellaInterna">
+            <p>Lampada</p>
+          </div>
+
+          <div class="descrizioneCardProdotto">
+            <h3 class="titleDescrizione">Lampada LED da scrivania orientabile</h3>
+            <p id="IconaStella">aggiungere icona</p>
+            <p>89.99</p>
+            <div class="btnAggiungiCarrello"> <button>Aggiungi al carrello</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sottoProdotto">
+        <div class="cardProdotto">
+          <div class="cellaInterna">
+            <p>Smartwatch</p>
+          </div>
+
+          <div class="descrizioneCardProdotto">
+            <h3 class="titleDescrizione">Smartwatch fitness con GPS</h3>
+            <p id="IconaStella">aggiungere icona</p>
+            <p>89.99</p>
+            <div class="btnAggiungiCarrello"> <button>Aggiungi al carrello</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sottoProdotto">
+        <div class="cardProdotto">
+          <div class="cellaInterna">
+            <p>Mouse</p>
+          </div>
+
+          <div class="descrizioneCardProdotto">
+            <h3 class="titleDescrizione">Mouse ergonomico wireless</h3>
+            <p id="IconaStella">aggiungere icona</p>
+            <p>89.99</p>
+            <div class="btnAggiungiCarrello"> <button>Aggiungi al carrello</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sottoProdotto">
+        <div class="cardProdotto">
+          <div class="cellaInterna">
+            <p>Caffettieraa</p>
+          </div>
+
+          <div class="descrizioneCardProdotto">
+            <h3 class="titleDescrizione">Caffettiera moka 6 tazze</h3>
+            <p id="IconaStella">aggiungere icona</p>
+            <p>89.99</p>
+            <div class="btnAggiungiCarrello"> <button>Aggiungi al carrello</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+  </main>
+
+  <footer>
+    <!-- 3 colonne di link -->
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

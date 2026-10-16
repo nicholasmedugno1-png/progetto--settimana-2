@@ -8,6 +8,8 @@ REGOLE
 - Cerca solo cose non viste a lezione. Tutto il necessario è già stato spiegato in settimana.
 */
 
+const { createElement } = require("react");
+
 
 /* VERSIONE INTERMEDIA — array prodotti
    Crea l'array "prodotti" con almeno 12 oggetti.
@@ -35,7 +37,7 @@ const arrayProdotti = [
    },
    {
       nome: 'libro',
-      categoria: 'elettronica',
+      categoria: 'libri',
       prezzo: 14.90,
       rating: 4,
       immagine: 'mouse.png',
@@ -43,7 +45,7 @@ const arrayProdotti = [
    },
    {
       nome: 'zaino',
-      categoria: 'elettronica',
+      categoria: 'abbigliamento',
       prezzo: 49.99,
       rating: 4,
       immagine: 'mouse.png',
@@ -51,7 +53,7 @@ const arrayProdotti = [
    },
    {
       nome: 'lampada',
-      categoria: 'elettronica',
+      categoria: 'casa',
       prezzo: 29.50,
       rating: 3,
       immagine: 'mouse.png',
@@ -75,7 +77,7 @@ const arrayProdotti = [
    },
    {
       nome: 'caffettiera',
-      categoria: 'elettronica',
+      categoria: 'casa',
       prezzo: 22.00,
       rating: 5,
       immagine: 'mouse.png',
@@ -83,7 +85,7 @@ const arrayProdotti = [
    },
    {
       nome: 'diario',
-      categoria: 'elettronica',
+      categoria: 'libri',
       prezzo: 19.99,
       rating: 5,
       immagine: 'mouse.png',
@@ -91,7 +93,7 @@ const arrayProdotti = [
    },
    {
       nome: 'cintura',
-      categoria: 'elettronica',
+      categoria: 'abbigliamento',
       prezzo: 49.99,
       rating: 2,
       immagine: 'mouse.png',
@@ -168,12 +170,31 @@ console.log(valutazione())
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function trovaCategorie(categoria){
+   for(let i = 0 ; i < arrayProdotti.length; i++){
+      if(arrayProdotti[i].categoria === categoria){
+         console.log(arrayProdotti[i])
+      }
+   }
+}
+console.log(trovaCategorie('elettronica'))
 
 /* VERSIONE INTERMEDIA — Filtro disponibilità e rating
    Funzione che genera un array filtrato dall'array prodotti, mostrando soltanto i prodotti disponibili con rating >= 3
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function newArrayProdotti(){
+   let nuovoArray = []
+    for(let i = 0 ; i < arrayProdotti.length; i++){
+      if( arrayProdotti[i].rating >= 3 && arrayProdotti[i].disponibile === true){
+         nuovoArray.push(arrayProdotti[i])
+      }
+   }
+   return nuovoArray
+}
+console.log(newArrayProdotti())
 
 /* --------------------------------------------------------------
 

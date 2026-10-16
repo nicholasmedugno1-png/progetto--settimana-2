@@ -106,12 +106,14 @@ header {
   margin-right: 0px;
   width: 600px;
   border-radius: 5px 0px 0px 5px;
-  border: none;
+  border: 0px;
+  border-top: 1px solid white;
   height: 100%;
 }
 
 .barSerch input:focus{
   outline:  none;
+  
 }
 
 .barSerch input::placeholder{

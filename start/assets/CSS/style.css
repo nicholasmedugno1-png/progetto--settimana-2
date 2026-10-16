@@ -94,6 +94,7 @@ header {
 
 
 .barSerch button {
+  padding: 0px 5px;
   background-color: #FEBD69;
   border-radius: 0px 5px 5px 0px;
   height: 100%;
@@ -104,7 +105,7 @@ header {
 
 .barSerch input {
   margin-right: 0px;
-  width: 600px;
+  width: 400px;
   border-radius: 5px 0px 0px 5px;
   border: 0px;
   border-top: 1px solid white;

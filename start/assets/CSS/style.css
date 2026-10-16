@@ -363,13 +363,14 @@ width: 90%;
   background-color: #F7CA00;
 }
 
-footer {
+footer {height: 25vh;
   background-color: #232F3E;
   color: #c2c1c1;
   margin-top: 5px;
 }
 
 table {
+  padding-top: 6px;
   width: 80%;
   margin: 0 auto;
 }

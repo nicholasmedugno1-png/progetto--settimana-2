@@ -162,9 +162,10 @@ function renderProdotti(lista) {
     let rigaTotale = document.createElement('tr')
 
     rigaTotale.innerHTML = `
-         <td>Totale Prodotti: ${lista.length}</td>
+         Totale Prodotti: ${lista.length}
     `;
     stampa.innerHTML += rigaTotale.innerHTML
+    
 }
 
 renderProdotti(arrayProdottiStampa);

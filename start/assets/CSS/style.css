@@ -19,8 +19,11 @@ body {
 .categorie,
 .prodotti {
   text-align: center;
-  margin-left: 0 auto;
   
+}
+
+main{
+  margin-left: 5px;
 }
 
 
@@ -70,9 +73,12 @@ header {
   display: inline-block;
 }
 
-.logoAmazon p {
+.logoAmazon a {
   color: #ff9900;
   font-weight: bold;
+}
+.logoAmazon a:hover {
+  text-decoration: none;
 }
 
 .barSerch {
@@ -308,6 +314,9 @@ header {
   
 
 }
+.hero div h1 {
+            padding-top: 18px;
+            }
 
 
 
@@ -336,17 +345,20 @@ header {
 footer {
   background-color: #232F3E;
   color: #c2c1c1;
-  text-align: center;
+  margin-top: 5px;
 }
 
 table {
+  width: 80%;
   margin: 0 auto;
-  width: 100%;
-  margin-left: 5px;
 }
 
 table tr , td, th {
   text-align: start;
+}
+
+table tbody tr td a {
+  font-size: 0.6em;
 }
 
 .spanPrezzo {
@@ -359,3 +371,41 @@ img{
   
 }
 
+.btnScopri {
+  background-color: #232F3E;
+  padding: 5px;
+  border-radius: 10px;
+  color: #c2c1c1;
+  }
+
+  .btnScopri:hover {
+    background-color: #0e4168;
+  }
+
+
+
+
+.tableProdotti:nth-of-type(table) {
+text-align: center;
+}
+
+.tableProdotti {
+    border-collapse: collapse;
+    border: 1px solid rgb(179, 177, 177);
+    width: 50%;
+    margin: 0 auto;
+    
+    }
+
+ .tableProdotti th {
+  background-color: #232F3E;
+  color: #fff;
+    border: 1px solid rgb(179, 177, 177);
+}
+ .tableProdotti tr {
+    border: 1px solid rgb(179, 177, 177);
+}
+
+.tableProdotti tr:nth-child(odd) {
+    background-color: hsla(60, 1%, 32%, 0.5);
+}

@@ -5,11 +5,82 @@
     <script src="script.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Document</title>
+    <style>
+        .hero div h1 {
+            padding-top: 35px;
+            }
+    </style>
+    <title>Pagina-Prodotti</title>
 </head>
 <body>
-    <table id="stampa"></table>
+<header>
+    <!-- Logo, barra di ricerca, link Account / Ordini / Carrello -->
+
+    <div class="topBar">
+      <div class="logoAmazon">
+       <a href="index.html">amazon</a>
+      </div>
+      <div class="barSerch">
+        <input type="text" placeholder="Cerca prodotti, categoria, brand">
+        <button>Cerca</button>
+      </div>
+
+
+      <div class="user">
+        <a href="javaScript.void(0)">Accaunt</a>
+        <a href="javaScript.void(0)">Ordini</a>
+      </div>
+      <div class="Carrello">
+        <button class="btnShop"><a href="javaScript.void(0)">Carrello (0)</a></button>
+      </div>
+    </div>
+
+    </div>
+
+  </header>
+  <section class="hero">
+    <!-- Titolo grande, sottotitolo -->
+    <div class="title">
+      <h1>Tutti i nostri prodotti</h1>
+      
+    </div>
+    
+  </section>
+
+    <table  class="tableProdotti">
+        <tbody id="stampa"></tbody>
+    </table>
+    <button class="btnScopri"><a href="index.html">Torna alla HOME</a></button>
+
+    <footer>
+    <!-- 3 colonne di link -->
+     <table>
+      <thead>
+      <tr>
+        <th>Chi siamo</th>
+        <th>Aiuto</th>
+        <th>Connettiti</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="javascript:void(0)">Lavora con noi</a></td>
+        <td><a href="javascript:void(0)">Centro assistenza</a></td>
+        <td><a href="javascript:void(0)">Facebook</a></td>
+      </tr>
+      <tr>
+        <td><a href="javascript:void(0)">Investitori</a></td>
+        <td><a href="javascript:void(0)">Spedizioni</a></td>
+        <td><a href="javascript:void(0)">Instagram</a></td>
+      </tr>
+      <tr>
+        <td><a href="javascript:void(0)">Sostenibilita'</a></td>
+        <td><a href="javascript:void(0)">Resi e rimborsi</a></td>
+        <td><a href="javascript:void(0)">YouTube</a></td>
+      </tr>
+    </tbody>
+     </table>
+  </footer>
     <script src="assets/javaScript/stampa.js"></script>
 </body>
 </html>

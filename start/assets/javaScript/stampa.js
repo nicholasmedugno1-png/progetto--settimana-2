@@ -90,7 +90,7 @@ const arrayProdottiStampa = [
    {
       nome: 'monitor',
       categoria: 'elettronica',
-      prezzo: 489.99,
+      prezzo: '489.99',
       rating: 4,
       immagine: 'mouse.png',
       disponibile: false
@@ -134,10 +134,12 @@ function renderProdotti(lista) {
     let rigaIntestazione = document.createElement('tr');
 
     rigaIntestazione.innerHTML = `
+    <tr>
         <th>NOME</th>
         <th>PREZZO</th>
         <th>CATEGORIA</th>
         <th>VALUTAZIONE</th>
+      </tr>   
     `;
 
     stampa.innerHTML = rigaIntestazione.innerHTML;
@@ -147,7 +149,7 @@ function renderProdotti(lista) {
       
         celleTable.innerHTML = `
             <td>${lista[i].nome}</td>
-            <td>${lista[i].prezzo}</td>
+            <td>${lista[i].prezzo} €</td>
             <td>${lista[i].categoria}</td>
             <td>${valutazione(lista[i].rating)}</td>
         `;

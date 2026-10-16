@@ -157,3 +157,4 @@ function renderProdotti(lista) {
 }
 
 renderProdotti(arrayProdottiStampa);
+

@@ -18,9 +18,11 @@ body {
 
 .categorie,
 .prodotti {
-  margin-left: 5px;
+  text-align: center;
+  margin-left: 0 auto;
   
 }
+
 
 
 img {
@@ -32,12 +34,6 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-main {
-  margin: 0 auto;
-  width: 90%;
-}
-
 
 
 a:hover {
@@ -75,7 +71,8 @@ header {
 }
 
 .logoAmazon p {
-  color: yellow;
+  color: #ff9900;
+  font-weight: bold;
 }
 
 .barSerch {
@@ -94,12 +91,19 @@ header {
 
 }
 
+
+
 .barSerch input {
   margin-right: 0px;
   width: 600px;
   border-radius: 5px 0px 0px 5px;
   border: none;
   height: 100%;
+
+}
+
+.barSerch input::placeholder{
+  font-size: x-small;
 
 }
 
@@ -145,14 +149,13 @@ header {
 }
 
 
-.categorie {
-  width: 90%;
-  max-width: 800px;
-}
+
 
 .categorie h3,
 .prodotti h3 {
-  margin-left: -40px;
+  text-align: start;
+  margin-left: 5px;
+  margin-top: 5px;
 }
 
 
@@ -164,11 +167,11 @@ header {
 
 .card {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
-  width: 170px;
+  width: 180px;
   height: 150px;
   border-radius: 5px;
   display: inline-block;
-  margin: 10px;
+  margin:10px;
   position: relative;
 
 }
@@ -207,7 +210,7 @@ header {
   padding: 5px;
 }
 
-.descrizioneCard h3 {
+.descrizioneCard h4 {
   font-size: 0.8em;
 
 
@@ -225,7 +228,7 @@ header {
 }
 
 .cardProdotto {
-  
+  padding-top: 5px;
   width: 180px;
   height: 250px;
   border-radius: 5px;
@@ -237,27 +240,72 @@ header {
 }
 
 .cellaInterna {
-  background-color: #c2c1c1;
+  
+  background-size: cover;
+  background-position: center;
   margin: 0 auto;
   text-align: center;
   width: 90%;
-  height: 90px;
+  height: 130px;
   border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  
 }
 
-.cellaInterna p{
-margin-top: 30px;
+.imgCuffie{
+  background-image: url(../img/imgProdotti/istockphoto-1412240771-612x612.jpg);
+  background-size: cover;
+  background-position: center;
 }
+.imgTablet{
+  background-image: url(../img/imgProdotti/Tablet_articolo-1200x660.jpg);
+  background-size: cover;
+  background-position: center;
+}
+ .imgLibro {
+  background-image: url(../img/imgProdotti/libro.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+ .imgLampada {
+  background-image: url(../img/imgProdotti/lampada.webp);
+  background-size: cover;
+  background-position: center;
+}
+ .imgSmart {
+  background-image: url(../img/imgProdotti/smart.jpg);
+  background-size: cover;
+  background-position: center;
+}
+ .imgMouse {
+  background-image: url(../img/imgProdotti/99575_1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+ .imgCaffe {
+  background-image: url(../img/imgProdotti/caffe.webp);
+  background-size: cover;
+  background-position: center;
+}
+ .imgZaino {
+  background-image: url(../img/imgProdotti/PA517_2018.avif);
+  background-size: cover;
+  background-position: center;
+}
+
 
 
 .descrizioneCardProdotto {
-
+  text-align: start;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 98px;
   border-radius: 0 0 5px 5px;
   padding: 5px;
+  position: relative;
+  
 
 }
 
@@ -288,13 +336,12 @@ margin-top: 30px;
 footer {
   background-color: #232F3E;
   color: #c2c1c1;
-  
+  text-align: center;
 }
 
 table {
   margin: 0 auto;
   width: 100%;
-  text-align: start;
   margin-left: 5px;
 }
 
@@ -306,3 +353,9 @@ table tr , td, th {
   color: red;
   font-weight: bold;
 }
+
+img{
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  
+}
+

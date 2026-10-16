@@ -165,6 +165,35 @@ function ritrnaPrezzo() {
 // }
 // console.log(valutazione())
 
+const stelle = document.querySelectorAll('.IconaStella')
+for(let i = 0; i < stelle.length; i++) {
+   stelle[i].textContent = valutazione(arrayProdotti[i].rating)
+}
+
+function valutazione(rating){
+           switch (rating) {
+      case 5:
+        return `★★★★★`;
+          
+      case 4:
+          return `★★★★☆`;
+          
+
+      case 3:
+          return `★★★☆☆`;
+          
+      case 2:
+           return `★★☆☆☆`;
+          
+      case 1:
+          return `★☆☆☆☆`;
+      
+      default:
+         return "☆☆☆☆☆"; 
+         }
+      }
+
+
 /* VERSIONE INTERMEDIA — Filtro per categoria
    Funzione che riceve il parametro categoria e filtra l'array prodotti mostrando solo i prodotti della categoria ricevuta
 */

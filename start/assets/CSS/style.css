@@ -167,7 +167,7 @@ header {
 .categorie h3,
 .prodotti h3 {
   text-align: start;
-  margin-left: 5px;
+  margin-left: -40px;
   margin-top: 5px;
 }
 
@@ -395,6 +395,7 @@ img{
   padding: 5px;
   border-radius: 10px;
   color: #c2c1c1;
+  margin-left: -40px;
   }
 
   .btnScopri:hover {

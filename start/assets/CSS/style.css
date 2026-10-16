@@ -83,18 +83,16 @@ header {
 
 .barSerch {
   display: inline-block;
-  height: 17px;
-  text-align: center;
+  height: 20px;
   font-size: 0px;
-
 }
+
 
 .barSerch button {
   background-color: #FEBD69;
   border-radius: 0px 5px 5px 0px;
-  height: 97%;
-
-
+  height: 100%;
+  margin-right: 30px;
 }
 
 
@@ -105,7 +103,10 @@ header {
   border-radius: 5px 0px 0px 5px;
   border: none;
   height: 100%;
+}
 
+.barSerch input:focus{
+  outline:  none;
 }
 
 .barSerch input::placeholder{
@@ -114,6 +115,7 @@ header {
 }
 
 .Carrello {
+  margin-left: 10px;
   display: inline-block;
 
 }
@@ -189,20 +191,28 @@ header {
 }
 
 .cardElettro {
-  background-color: #232F3E;
+  background-image: url(../img/imgProdotti/eletronica.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .cardCasa {
-  background-color: #067D62;
+  background-image: url(../img/imgProdotti/prodottiCasa.jpg);
+  background-position: center;
+  background-size: cover;
 
 }
 
 .cardAbbigliamento {
-  background-color: #146EB4;
+ background-image: url(../img/imgProdotti/abb.avif);
+  background-position: center;
+  background-size: cover;
 }
 
 .cardLibri {
-  background-color: #C45500;
+   background-image: url(../img/imgProdotti/libriElement.avif);
+  background-position: center;
+  background-size: cover;
 }
 
 .descrizioneCard {
@@ -402,7 +412,7 @@ text-align: center;
   color: #fff;
     border: 1px solid rgb(179, 177, 177);
 }
- .tableProdotti tr {
+ .tableProdotti td {
     border: 1px solid rgb(179, 177, 177);
 }
 

@@ -8,7 +8,7 @@ REGOLE
 - Cerca solo cose non viste a lezione. Tutto il necessario è già stato spiegato in settimana.
 */
 
-const { createElement } = require("react");
+
 
 
 /* VERSIONE INTERMEDIA — array prodotti
@@ -137,33 +137,33 @@ function ritrnaPrezzo() {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-function valutazione(){
-   for(let i = 0 ; i < arrayProdotti.length; i++){
+// ESERCIZIO SVOLTO ANCHE NELLA PAGINA STAMPA.JS  <-----------------------------------
+// function valutazione(){
+//    for(let i = 0 ; i < arrayProdotti.length; i++){
       
-            switch (arrayProdotti[i].rating) {
-      case 5:
-         console.log( `${arrayProdotti[i].nome} valutazione: 5 → ★★★★★`)
-          break;
-      case 4:
-          console.log( `${arrayProdotti[i].nome} valutazione: 4 → ★★★★☆`)
-          break;
+//             switch (arrayProdotti[i].rating) {
+//       case 5:
+//          console.log( `${arrayProdotti[i].nome} valutazione: 5 → ★★★★★`)
+//           break;
+//       case 4:
+//           console.log( `${arrayProdotti[i].nome} valutazione: 4 → ★★★★☆`)
+//           break;
 
-      case 3:
-          console.log( `${arrayProdotti[i].nome} valutazione: 3 → ★★★☆☆`)
-          break;
-      case 2:
-          console.log( `${arrayProdotti[i].nome} valutazione: 2 → ★★☆☆☆`)
-          break;
-      case 1:
-          console.log( `${arrayProdotti[i].nome} valutazione: 1 → ★☆☆☆☆`)
-          break;
-      default:
-         return "Il prodotto non ha un rating"; 
-         }
-      }
-}
-console.log(valutazione())
+//       case 3:
+//           console.log( `${arrayProdotti[i].nome} valutazione: 3 → ★★★☆☆`)
+//           break;
+//       case 2:
+//           console.log( `${arrayProdotti[i].nome} valutazione: 2 → ★★☆☆☆`)
+//           break;
+//       case 1:
+//           console.log( `${arrayProdotti[i].nome} valutazione: 1 → ★☆☆☆☆`)
+//           break;
+//       default:
+//          return "Il prodotto non ha un rating"; 
+//          }
+//       }
+// }
+// console.log(valutazione())
 
 /* VERSIONE INTERMEDIA — Filtro per categoria
    Funzione che riceve il parametro categoria e filtra l'array prodotti mostrando solo i prodotti della categoria ricevuta
@@ -205,6 +205,8 @@ console.log(newArrayProdotti())
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+// ESERCIZIO SVOLTO NELLA PAGINA STAMPA.JS  <-----------------------------------
+      
 
 /* VERSIONE AVANZATA — Aggiungi al carrello
    Quando si clicca il bottone "Aggiungi al carrello", incrementa il contatore

@@ -33,6 +33,11 @@ a {
   text-decoration: none;
 }
 
+main {
+  margin: 0 auto;
+  width: 90%;
+}
+
 
 
 a:hover {
@@ -78,7 +83,7 @@ header {
   height: 17px;
   text-align: center;
   font-size: 0px;
-  
+
 }
 
 .barSerch button {
@@ -143,9 +148,14 @@ header {
 .categorie {
   width: 90%;
   max-width: 800px;
-
-
 }
+
+.categorie h3,
+.prodotti h3 {
+  margin-left: -40px;
+}
+
+
 
 .sottoCategoria {
   display: inline-block;
@@ -215,9 +225,9 @@ header {
 }
 
 .cardProdotto {
-  padding-top: 8px;
+  
   width: 180px;
-  height: 230px;
+  height: 250px;
   border-radius: 5px;
   background-color: #ffffff;
   display: inline-block;
@@ -230,7 +240,6 @@ header {
   background-color: #c2c1c1;
   margin: 0 auto;
   text-align: center;
-  border: 1px solid black;
   width: 90%;
   height: 90px;
   border-radius: 3px;
@@ -249,11 +258,6 @@ margin-top: 30px;
   height: 98px;
   border-radius: 0 0 5px 5px;
   padding: 5px;
-
-}
-
-.descrizioneCardProdotto h3 {
-  font-size: 0.6em;
 
 }
 
